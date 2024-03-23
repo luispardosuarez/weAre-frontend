@@ -1,8 +1,26 @@
 <script setup>
-  
 
-  
+import AuthService from '@/services/AuthService';
+import { useRouter } from 'vue-router';
+
+const credentials = {
+  username: '',
+  password: '',
+};
+
+const router = useRouter();
+
+const login = async () => {
+  try {
+    const response = await AuthService.login(credentials);
+    router.push('/solicitudes');
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 </script>
+
 
 <template>
 
