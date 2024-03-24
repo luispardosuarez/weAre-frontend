@@ -1,21 +1,21 @@
 <script setup>
+import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import SolicitudService from '@/service/SolicitudService';
 
-  import SolicitudService from '@/services/SolicitudService';
-  import { ref, onMounted } from 'vue';
+const route = useRoute();
+const solicitud = ref(null);
 
-  const solicitud = ref(null);
-
-  onMounted(async () => {
-    try {
-      const response = await SolicitudService.getSolicitudById($route.params.id);
-      solicitud.value = response.data;
-    } catch (error) {
-      console.error('Error al cargar la solicitud:', error);
-    }
-  });
+onMounted(async () => {
+  try {
+    const response = await SolicitudService.getSolicitudById(route.params.id);
+    solicitud.value = response.data;
+  } catch (error) {
+    console.error('Error al cargar la solicitud:', error);
+  }
+});
 
 </script>
-
 <template>
 
   <div class="solicitud-detalle">
@@ -30,9 +30,4 @@
       <p>Cargando detalles de la solicitud...</p>
     </div>
   </div>
-
 </template>
-
-<style scoped lang="scss">
-
-</style>
