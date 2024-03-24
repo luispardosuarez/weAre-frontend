@@ -1,16 +1,11 @@
 <script setup>
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> login
 </script>
 
 <template>
 
-<<<<<<< HEAD
-=======
 <section class="h-100 gradient-form" style="background-color: #eee;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -27,12 +22,18 @@
                 </div>
 
                 <form>
-                  <p>Please login to your account</p>
+                  <p>Please sign up to create your account</p>
 
                   <div class="form-outline mb-4">
                     <input type="text" id="form2Example11" class="form-control"
-                      placeholder="Username" />
+                      placeholder="username" />
                     <label class="form-label" for="form2Example11">Username</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form2Example11" class="form-control"
+                      placeholder="email address" />
+                    <label class="form-label" for="form2Example11">Email</label>
                   </div>
 
                   <div class="form-outline mb-4">
@@ -41,19 +42,12 @@
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
-                      in</button>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Sing
+                      up</button>
                       <br>
-                    <a class="text-muted" href="#!">Forgot password?</a>
-                  </div>
-
-                  <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Don't have an account?</p>
-                    <button type="button" class="btn btn-outline-danger">Create new</button>
                   </div>
 
                 </form>
-
               </div>
             </div>
             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
@@ -69,14 +63,10 @@
   </div>
 </section>
 
->>>>>>> login
 </template>
 
 <style scoped lang="scss">
 
-<<<<<<< HEAD
-</style>
-=======
 section {
   .gradient-custom-2 {
     background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
@@ -97,4 +87,6 @@ section {
 }
 
 </style>
->>>>>>> login
+
+
+
