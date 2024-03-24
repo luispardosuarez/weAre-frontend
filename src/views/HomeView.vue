@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <main>
+  <header>
 
-  </main>
+  </header>
 </template>
 
 <style >
