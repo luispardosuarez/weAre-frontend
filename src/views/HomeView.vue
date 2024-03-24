@@ -18,31 +18,31 @@ import { useRouter } from 'vue-router';
                 <div class="text-center">
                   <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
                     style="width: 185px;" alt="logo">
-                  <h4 class="mt-1 mb-5 pb-1">weAre People Software</h4>
+                  <h3 class="mt-1 mb-5 pb-1">weAre People Software</h3>
                 </div>
 
                 <form>
                 
                   <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control"
-                      placeholder="Correo electrónico" />
-                    <label class="form-label" for="form2Example11">Usuario</label>
+                    <input type="text" id="form2Example11" class="form-control"
+                      placeholder="Username" />
+                    <label class="form-label" for="form2Example11">Username</label>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="contraseña" id="form2Example22" class="form-control" />
-                    <label class="form-label" for="form2Example22">Contraseña</label>
+                    <input type="password" id="form2Example22" class="form-control" />
+                    <label class="form-label" for="form2Example22">Password</label>
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
                     <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
                       in</button>
-                    <a class="text-muted" href="#!">¿Olvidaste tu contraseña?</a>
+                    <a class="text-muted" href="#!">Forgot your password?</a>
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">¿No tienes cuenta?</p>
-                    <button type="button" class="btn btn-outline-danger">Crea tu usuario</button>
+                    <p class="mb-0 me-2">Don't have an account?</p>
+                    <button type="button" class="btn btn-outline-danger">Create New</button>
                   </div>
 
                 </form>
