@@ -88,6 +88,3 @@ section {
 }
 
 </style>
-
-
-
