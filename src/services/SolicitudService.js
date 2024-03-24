@@ -11,7 +11,9 @@ class SolicitudService {
     return axios.get(API_URL + id);
   }
 
-  // Implementa métodos para crear, actualizar y eliminar solicitudes según sea necesario.
+  static getSolicitudesPorPosicion(posicion) {
+    return axios.get(API_URL + 'solicitudes', { params: { posicion } });
+  }
 }
 
 export default SolicitudService;
