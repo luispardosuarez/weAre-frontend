@@ -1,6 +1,6 @@
 <script setup>
-
-  import AuthService from '@/services/AuthService';
+  
+  import AuthService from '../services/AuthService';
   import { useRouter } from 'vue-router';
 
   const credentials = {
@@ -24,7 +24,7 @@
 
 <template>
 
-  <main>
+  <main> 
     <div>
     <h2>Login</h2>
     <form @submit.prevent="login">
@@ -34,6 +34,8 @@
     </form>
   </div>
   </main>
+
+
 
 </template>
 
