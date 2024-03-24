@@ -1,6 +1,6 @@
 <script setup>
 
-  import AuthService from '@/services/AuthService'; 
+  import AuthService from '@/service/AuthService'; 
   import { ref } from 'vue';
 
   const user = ref({
@@ -21,7 +21,6 @@
   };
 
 </script>
-
 <template>
 
   <div class="register">
