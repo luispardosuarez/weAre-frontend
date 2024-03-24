@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 
 <template>
@@ -9,53 +9,42 @@ import { RouterLink, RouterView } from 'vue-router'
   <div class="col">
     <div class="card h-100">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h3 class="card-title">Peticiones</h3>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a short card.</p>
+        <h3 class="card-title">Candidate Persona</h3>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <h3 class="card-title">Pruebas Técnicas</h3>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h3 class="card-title">Gestión de Procesos</h3>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h3 class="card-title">Redes Sociales</h3>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h3 class="card-title">Procesos Asíncronos</h3>
       </div>
     </div>
   </div>
