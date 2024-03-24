@@ -1,4 +1,6 @@
+
 <script setup>
+import AuthService from './services/AuthService';
 
 const logout = () => {
   AuthService.logout();
