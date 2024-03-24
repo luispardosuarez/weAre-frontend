@@ -26,45 +26,47 @@ const logout = () => {
 </template>
 
 <style scoped lang="scss">
-#app {
-  .navbar {
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
 
-  .navbar-logo img {
-    height: 60px; 
-    margin-left: 17px;
-  }
+  #app {
+    .navbar {
+      background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
 
-  .navbar-user {
-    display: flex;
-    align-items: center;
-  }
+    .navbar-logo img {
+      height: 60px; 
+      margin-left: 17px;
+    }
 
-  .saludo {
-    font-size: 1.1rem;
-    margin-right: 15px; 
-  }
+    .navbar-user {
+      display: flex;
+      align-items: center;
+    }
 
-  .nombre-usuario {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-right: 10px; 
-  }
+    .saludo {
+      font-size: 1.1rem;
+      margin-right: 15px; 
+    }
 
-  .navbar-user button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+    .nombre-usuario {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-right: 10px; 
+    }
 
-  .bi-person-lines-fill {
-    margin-right: 20px;
+    .navbar-user button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .bi-person-lines-fill {
+      margin-right: 20px;
+    }
   }
-}
+  
 </style>
