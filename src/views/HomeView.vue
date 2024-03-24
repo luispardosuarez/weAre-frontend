@@ -1,43 +1,25 @@
-<script setup>
-  
-  import { useRouter } from 'vue-router';
-
-  const credentials = {
-    username: '',
-    password: '',
-  };
-
-  const router = useRouter();
-
-  const login = async () => {
-    try {
-      const response = await AuthService.login(credentials);
-      router.push('/solicitudes');
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-</script>
-
-
 <template>
-
-  <main> 
-    <div>
-    <h2>Login</h2>
-    <form @submit.prevent="login">
-      <input v-model="credentials.username" placeholder="Username" />
-      <input type="password" v-model="credentials.password" placeholder="Password" />
-      <button type="submit">Login</button>
-    </form>
+  <div class="home">
+    <h1>Bienvenido a la Gestión de Solicitudes</h1>
+    <p>Esta es una aplicación para manejar las solicitudes internas de la empresa.</p>
+    <div class="links">
+      <router-link to="/login">Iniciar Sesión</router-link> |
+      <router-link to="/register">Registrarse</router-link> |
+      <router-link to="/solicitudes">Ver Solicitudes</router-link>
+    </div>
   </div>
-  </main>
-
-
-
 </template>
 
-<style scoped lang="scss">
+<script setup>
+// No hay necesidad de exportar 'name' en script setup
+</script>
 
+<style scoped>
+.home {
+  text-align: center;
+}
+
+.links {
+  margin-top: 20px;
+}
 </style>
