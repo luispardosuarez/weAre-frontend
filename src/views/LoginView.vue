@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import AuthService from '@/service/AuthService';
+import AuthService from '@/services/AuthService';
 
 const router = useRouter();
 const username = ref('');
@@ -27,16 +27,5 @@ const login = async () => {
     <input v-model="username" placeholder="Username" />
     <input type="password" v-model="password" placeholder="Password" />
     <button @click="login">Login</button>
-  </div>
-</template>
-
-<template>
-  <div>
-    <h2>Login</h2>
-    <form @submit.prevent="login">
-      <input v-model="credentials.username" placeholder="Username" />
-      <input type="password" v-model="credentials.password" placeholder="Password" />
-      <button type="submit">Login</button>
-    </form>
   </div>
 </template>

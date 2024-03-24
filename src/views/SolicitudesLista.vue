@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
-import SolicitudService from '@/service/SolicitudService';
+import SolicitudService from '@/services/SolicitudService';
 
 const solicitudes = ref([]);
 

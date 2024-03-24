@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-import SolicitudService from '@/service/SolicitudService';
+import SolicitudService from '@/services/SolicitudService';
 
 const route = useRoute();
 const solicitud = ref(null);

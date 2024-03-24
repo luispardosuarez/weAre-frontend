@@ -1,6 +1,6 @@
 <script setup>
 
-  import AuthService from '@/service/AuthService'; 
+  import AuthService from '@/services/AuthService'; 
   import { ref } from 'vue';
 
   const user = ref({

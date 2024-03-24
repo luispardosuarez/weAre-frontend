@@ -1,3 +1,8 @@
+<script setup>
+// No hay necesidad de exportar 'name' en script setup
+</script>
+
+
 <template>
   <div class="home">
     <h1>Bienvenido a la Gestión de Solicitudes</h1>
@@ -10,9 +15,6 @@
   </div>
 </template>
 
-<script setup>
-// No hay necesidad de exportar 'name' en script setup
-</script>
 
 <style scoped>
 .home {
