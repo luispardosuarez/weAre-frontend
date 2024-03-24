@@ -1,6 +1,5 @@
 <script setup>
 
-  import AuthService from '@/services/AuthService';
   import { useRouter } from 'vue-router';
 
   const credentials = {
