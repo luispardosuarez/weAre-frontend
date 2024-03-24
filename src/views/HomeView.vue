@@ -1,5 +1,4 @@
 <script setup>
-<<<<<<< HEAD
 // No hay necesidad de exportar 'name' en script setup
 </script>
 
@@ -16,15 +15,6 @@
   </div>
 </template>
 
-=======
-</script>
-
-<template>
-
-</template>
-
-<style scoped lang="scss">
->>>>>>> cards
 
 <style scoped>
 .home {
