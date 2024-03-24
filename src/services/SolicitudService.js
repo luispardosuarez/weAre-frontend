@@ -1,33 +1,17 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api/auth/';
+const API_URL = 'http://localhost:8080/api/solicitudes/';
 
-class AuthService {
-  login(user) {
-    return axios
-      .post(API_URL + 'signin', {
-        username: user.username,
-        password: user.password
-      })
-      .then(response => {
-        if (response.data.accessToken) {
-          localStorage.setItem('user', JSON.stringify(response.data));
-        }
-        return response.data;
-      });
+class SolicitudService {
+  static getAllSolicitudes() {
+    return axios.get(API_URL);
   }
 
-  logout() {
-    localStorage.removeItem('user');
+  static getSolicitudById(id) {
+    return axios.get(API_URL + id);
   }
 
-  register(user) {
-    return axios.post(API_URL + 'signup', {
-      username: user.username,
-      password: user.password,
-      email: user.email
-    });
-  }
+  // Implementa métodos para crear, actualizar y eliminar solicitudes según sea necesario.
 }
 
-export default new AuthService();
+export default SolicitudService;
