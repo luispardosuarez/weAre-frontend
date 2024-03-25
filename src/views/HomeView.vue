@@ -1,275 +1,97 @@
 <script setup>
 
 
-const logout = () => {
-  AuthService.logout();
-};
+
 </script>
 
 <template>
-  <nav class="navbar">
-    <router-link to="/" class="navbar-logo">
-      <img src="../assets/img/logo_weAre-removebg-preview.png" alt="Logo weAre people software"> 
-    </router-link>
 
-    <div class="navbar-user">
-      <span class="saludo">¡WeAre,!</span>
-      <span class="nombre-usuario">{{ nombreUsuario }}</span>
-      <button @click="logout">
-        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="white" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-          <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" alt="Logout"/>
-        </svg>
-      </button>
-    </div>
-  </nav>
-  <router-view/>
-
-  <main>
-    <div class="container">
- 
-      <div class="button-wrapper">
-        <button class="custom-button">Gestión de Candidatos</button>
+  <section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+  
+                  <div class="text-center">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                      style="width: 185px;" alt="logo">
+                    <h3 class="mt-1 mb-5 pb-1">
+                      <span style="color: #E8642A;">weAre</span>
+                      <span>&nbsp;</span>
+                      <span style="color: #DB365B;">people</span>
+                      <span>&nbsp;</span>
+                      <span style="color: #C33F88;">software</span>
+                    </h3>
+                  </div>
+  
+                  <form>
+                    <p class="mb-3" style="margin-bottom: 0.8rem;">Please login to your account</p>
+  
+                    <div class="form-outline mb-2">
+                      <input type="text" id="form2Example11" class="form-control"
+                        placeholder="Username" />
+                      <label class="form-label" for="form2Example11">Username</label>
+                    </div>
+  
+                    <div class="form-outline mb-2">
+                      <input type="password" id="form2Example22" class="form-control" />
+                      <label class="form-label" for="form2Example22">Password</label>
+                    </div>
+  
+                    <div class="text-center pt-1 mb-5 pb-1">
+                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                        in</button>
+                        <br>
+                      <a class="text-muted" href="#!">Forgot password?</a>
+                    </div>
+                  </form>
+  
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <h1 class="mb-4" style="color: #7F3E99; font-size: 3.9rem; text-align: center;">weAre</h1>
+                  <p class="small mb-0" style="text-align: center; font-size: 1.3rem;">beyond people, beyond software</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cards-container">
-        <div class="card card1">
-          <div class="card-body">
-            <h4 class="card-title">Peticiones</h4>
-          </div>
-        </div>
-        <div class="card card2">
-          <div class="card-body">
-            <h4 class="card-title">Candidate Persona</h4>
-          </div>
-        </div>
-        <div class="card card3">
-          <div class="card-body">
-            <h4 class="card-title">Pruebas Técnicas</h4>
-          </div>
-        </div>
-        <div class="card card4">
-          <div class="card-body">
-            <h4 class="card-title">Gestión de Procesos</h4>
-          </div>
-        </div>
-        <div class="card card5">
-          <div class="card-body">
-            <h4 class="card-title">Redes Sociales</h4>
-          </div>
-        </div>
-        <div class="card card6">
-          <div class="card-body">
-            <h4 class="card-title">Procesos Asíncronos</h4>
-          </div>
-        </div>
-      </div>
     </div>
-  </main>
-
-  <footer>
-    <div class="copyright">
-      <h7><span class="weare-text">weAre</span> people Software</h7>
-    </div>
-  </footer>
-
+  </section>
+  
 </template>
 
 <style scoped lang="scss">
 
-#app {
-  .navbar {
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .navbar-logo img {
-    height: 60px; 
-    margin-left: 17px;
-  }
-
-  .navbar-user {
-    display: flex;
-    align-items: center;
-  }
-
-  .saludo {
-    font-size: 1.1rem;
-    margin-right: 15px; 
-  }
-
-  .nombre-usuario {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-right: 10px; 
-  }
-
-  .navbar-user button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .bi-person-lines-fill {
-    margin-right: 20px;
-  }
-}
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-
-    .header {
-      margin-right: auto;
+  section {
+    .gradient-custom-2 {
+      background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
     }
 
-    .button-wrapper {
-      margin-left: auto;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-
-    .custom-button {
-      border: 1px solid #B64491;
-      border-radius: 10px;
-      background-color: transparent;
-      color: #B64491;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      outline: none;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    .custom-button:hover {
-      background-color: #B64491;
-      color: white;
-    }
-
-    .cards-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .card {
-      width: calc(33.33% - 40px);
-      margin: 20px;
-      height: 150px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      transition: background-color 0.3s, border-color 0.3s;
+    .form-outline {
+      margin-bottom: 0.5rem; 
     }
 
     .card-body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
+      margin-bottom: 1.5rem; 
     }
 
-    .card-title {
-      margin: 0;
-    }
-
-    .card1,
-    .card4 {
-      border-color: #E2552F;
-      color: #E2552F;
-    }
-
-    .card2,
-    .card5 {
-      border-color: #DB3660;
-      color: #DB3660;
-    }
-
-    .card3,
-    .card6 {
-      border-color: #CB3C82;
-      color: #CB3C82;
-    }
-
-    .card:hover {
-      background-color: transparent;
-    }
-
-    .card:hover .card-title {
-      color: white;
-    }
-
-    .card1:hover,
-    .card4:hover {
-      background-color: #E2552F;
-    }
-
-    .card2:hover,
-   .card5:hover {
-     background-color: #DB3660;
-    }
-
-    .card3:hover,
-    .card6:hover {
-      background-color: #CB3C82;
-    }
-
-    .header h3 {
-      margin: 0;
-      color: #803F9A;
-    }
-
-    .we-highlight {
-      color: #B64491;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .container {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .header,
-      .button-wrapper {
-        width: 100%;
-        text-align: center;
-      }
-
-      .header h3 {
-        margin: 0;
-        margin-bottom: 10px;
-      }
-
-      .custom-button {
-        width: calc(100% - 40px);
-        border-width: 1px;
-        box-sizing: border-box;
-      }
-
-      .card {
-        width: calc(100% - 40px);
+    @media (min-width: 768px) {
+      .gradient-form {
+        height: 100vh !important;
       }
     }
-  }
 
-  
-  footer {
-    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 1.5%;
-
-
-    .weare-text {
-      font-size: 1.5rem;
+    @media (min-width: 769px) {
+      .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+      }
     }
   }
 
