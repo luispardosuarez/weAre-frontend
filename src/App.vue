@@ -1,11 +1,9 @@
 <script setup>
-
   const nombreUsuario = localStorage.getItem('user');
 
   const logout = () => {
     AuthService.logout();
   };
-
 </script>
 
 <template>
@@ -25,16 +23,14 @@
     </div>
   </nav>
   <router-view />
-  <footer>
+  <footer class="footer">
     <div class="copyright">
       <h5><span class="weare-text">weAre</span> people Software</h5>
     </div>
   </footer>
-
 </template>
 
 <style scoped lang="scss">
-
   #app {
     .navbar {
       background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
@@ -77,17 +73,17 @@
     }
   }
 
-  footer {
+  .footer {
     background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center; 
     padding: 1.5%;
+    margin-top: 323px;
     
     .weare-text {
       font-size: 1.9rem;
     }
   }
-  
 </style>
