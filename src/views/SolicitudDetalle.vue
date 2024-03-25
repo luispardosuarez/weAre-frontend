@@ -24,7 +24,7 @@ onMounted(async () => {
       <p><strong>Características:</strong> {{ solicitud.caracteristicas }}</p>
       <p><strong>Responsabilidades:</strong> {{ solicitud.responsabilidades }}</p>
       <p><strong>Requisitos:</strong> {{ solicitud.requisitos }}</p>
-      <!-- Agrega más campos según tu modelo de datos -->
+ 
     </div>
     <div v-else>
       <p>Cargando detalles de la solicitud...</p>
