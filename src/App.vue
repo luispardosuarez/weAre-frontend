@@ -1,9 +1,11 @@
 <script setup>
-const nombreUsuario = localStorage.getItem('user');
 
-const logout = () => {
-  AuthService.logout();
-};
+  const nombreUsuario = localStorage.getItem('user');
+
+  const logout = () => {
+    AuthService.logout();
+  };
+
 </script>
 
 <template>
@@ -22,7 +24,13 @@ const logout = () => {
       </button>
     </div>
   </nav>
-  <router-view/>
+  <router-view />
+  <footer>
+    <div class="copyright">
+      <h5><span class="weare-text">weAre</span> people Software</h5>
+    </div>
+  </footer>
+
 </template>
 
 <style scoped lang="scss">
@@ -66,6 +74,19 @@ const logout = () => {
 
     .bi-person-lines-fill {
       margin-right: 20px;
+    }
+  }
+
+  footer {
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 1.5%;
+    
+    .weare-text {
+      font-size: 1.9rem;
     }
   }
   
