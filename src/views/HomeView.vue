@@ -26,9 +26,7 @@ const logout = () => {
 
   <main>
     <div class="container">
-      <div class="header">
-        <h3>¡weAre, Luis!</h3>
-      </div>
+ 
       <div class="button-wrapper">
         <button class="custom-button">Gestión de Candidatos</button>
       </div>
@@ -69,7 +67,7 @@ const logout = () => {
 
   <footer>
     <div class="copyright">
-      <h5><span class="weare-text">weAre</span> people Software</h5>
+      <h7><span class="weare-text">weAre</span> people Software</h7>
     </div>
   </footer>
 
@@ -271,7 +269,7 @@ const logout = () => {
 
 
     .weare-text {
-      font-size: 1.9rem;
+      font-size: 1.5rem;
     }
   }
 
