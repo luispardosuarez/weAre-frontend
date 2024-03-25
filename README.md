@@ -1,35 +1,71 @@
-# weAre
+# WeAre People Software
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to WeAre People Software, your go-to solution for human resources management. In this phase, we focus on developing requests for new positions within the company, while upcoming features will cover everything related to talent attraction.
 
-## Recommended IDE Setup
+## About
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+This project is a personal venture carried out within the Full Stack & Cloud Computing Bootcamp at Factoría F5.
 
-## Customize configuration
+Designs were crafted using Figma.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Stacks Used and Repositories 🛠️
 
-## Project Setup
+### Frontend
 
-```sh
-npm install
-```
+- HTML
+- SASS
+- JavaScript
+- Vue
+- Vite
+- Bootstrap
 
-### Compile and Hot-Reload for Development
+#### Initial Setup
 
-```sh
-npm run dev
-```
+To configure the frontend, follow these steps:
 
-### Compile and Minify for Production
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/luispardosuarez/weAre-people-software-frontend.git
+   ```
 
-```sh
-npm run build
-```
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+3. **Start the Server:**
+   ```bash
+   npm run dev
+   ```
 
-```sh
-npm run test:unit
-```
+### Backend
+
+- Java 21
+- Spring Boot 3.2.3
+- Maven
+- MySQL databases using Docker containers
+
+#### Initial Setup
+
+To configure the backend, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/luispardosuarez/weAre-people-software-backend.git
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   mvn clean install
+   ```
+
+3. **Run the Application:**
+   ```bash
+   mvn spring-boot:run
+   ```
+
+## Additional Tools
+
+Document management is handled using Jira and Confluence.
+
+Feel free to contribute and collaborate! 🚀
